@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Random Quote Generator</h1>
+        <p>Generate quotes for yourself.</p>
+        <div class="clear">
+         <button type="button" id="clear" onclick="localStorage.clear()">Clear All history</button>
+ </div>
+      </div>
+
+      <div class="body-container">
+        <div class="quote">
+          <p id="quotes"></p>
+        </div>
+        <div class="button">
+          <button type="button" id="generate" onclick="generateRandom()">
+            Generate
+          </button>
+        </div>
+        <div class="history">
+          <div class="history-btn">
+            <button type="button" id="view">View generated Quotes</button>
+          </div>
+          <div class="history-list">
+            <ul id="historyList"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+         <footer>
+                  <p>&copy; 2023 All copyriht reserved.</p>
+         </footer>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

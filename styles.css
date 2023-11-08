@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  overflow: auto;
+}
+.heading {
+  text-align: center;
+}
+.heading h1 {
+  font-size: 65px;
+  font-weight: 800;
+  padding: 12px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: amimateText 4s infinite;
+}
+@keyframes amimateText {
+  0% {
+    background-image: linear-gradient(45deg, red, green, blue);
+  }
+  50% {
+    background-image: linear-gradient(45deg, green, blue, red);
+  }
+  100% {
+    background-image: linear-gradient(45deg, blue, red, green);
+  }
+}
+.heading p {
+  font-size: 28px;
+}
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 55px;
+  padding: 55px;
+}
+#quotes {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button button {
+  font-size: 40px;
+  padding: 15px;
+  background-color: brown;
+  color: white;
+  border-radius: 12px;
+}
+.button button:hover {
+  background-color: #0ef;
+  transition: 0.3s;
+  transform: scale(1.3);
+  color: black;
+}
+.history-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#view {
+  margin-top: 65px;
+  font-size: 40px;
+  padding: 15px;
+  background-color: brown;
+  color: white;
+  border-radius: 12px;
+}
+#view:hover {
+  background-color: #0ef;
+  transition: 0.3s;
+  transform: scale(1.3);
+  color: black;
+}
+#historyList {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+}
+#historyList li {
+  padding: 10px;
+}
+.clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+#clear {
+  background-color: red;
+  color: white;
+  padding: 15px;
+  font-size: 23px;
+  border-radius: 12px;
+}
+#clear:hover {
+  background-color: darkred;
+  transition: 0.3s;
+  transform: scale(1.3);
+  color: white;
+}
+.footer {
+  width: 100%;
+  bottom: 0;
+  background: black;
+  color: white;
+  margin-top: 55px;
+  z-index: 1;
+}
+.footer p {
+  font-size: 26px;
+  padding: 20px;
+  text-align: center;
+}
